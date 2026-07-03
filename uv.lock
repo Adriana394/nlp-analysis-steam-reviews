@@ -3012,6 +3012,11 @@ dependencies = [
     { name = "xgboost" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "catboost", specifier = ">=1.2.10" },
@@ -3037,6 +3042,9 @@ requires-dist = [
     { name = "wordcloud", specifier = ">=1.9.6" },
     { name = "xgboost", specifier = ">=3.2.0" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=7.2.0" }]
 
 [[package]]
 name = "terminado"
