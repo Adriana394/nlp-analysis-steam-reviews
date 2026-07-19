@@ -6,12 +6,14 @@ variant specific decisions (stopwords, n-grams, lemmatization) live in the vecto
 import html
 
 def clean_text(text: str) -> str:
-    """Applay the shared cleaning steps to a single review string"""
+    """Apply the shared cleaning steps to a single review string"""
 
     if not isinstance(text, str):
         return ""
-    
-    text = html.unescape(text) # return html code
+
+    # html.unescape follows HTML5 rules, so broken entities without a trailing
+    # semicolon ('&gt') are decoded too — no extra regex needed.
+    text = html.unescape(text) # decode html entities
     text = text.lower() # lower case
     text = " ".join(text.split()) # clean whitespaces
     return text

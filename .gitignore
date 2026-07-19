@@ -13,9 +13,8 @@ wheels/
 data/*
 !data/.gitkeep
 
-# Models
-models/*.joblib
-models/*.pkl
+# Models (large binaries stay local, not in Git)
+models/**
 
 # Jupyter
 .ipynb_checkpoints/

@@ -1,0 +1,32 @@
+# Core
+pandas
+numpy
+scipy
+pyarrow
+
+# Classical ML
+scikit-learn
+xgboost
+catboost
+
+# NLP — classical
+gensim
+spacy
+lingua-language-detector
+
+# Transformers / embeddings
+torch
+transformers
+sentence-transformers
+datasets
+
+# Topic modeling
+bertopic
+umap-learn
+hdbscan
+
+# Notebook / viz
+jupyter
+matplotlib
+tqdm
+joblib
